@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gokhan_Yeletaysi.BasicRadioButtonsPage"
+             xmlns:local="clr-namespace:Gokhan_Yeletaysi"
+             Title="Basic RadioButtons demo">
+    <StackLayout Margin="10">
+        <Label Text="100 - 25 kaçtır?" />
+
+        <RadioButton Content="50"
+                     CheckedChanged="SayiCheckedChanged" />
+        <RadioButton Content="60"
+                     CheckedChanged="SayiCheckedChanged" />
+        <RadioButton Content="70"
+                     CheckedChanged="SayiCheckedChanged" />
+        <RadioButton Content="75"
+                   
+                     CheckedChanged="SayiCheckedChanged" />
+        <Label x:Name="sayiLabel"/>
+
+        <StackLayout>
+            <Label Text="1905 Yılında hangi takım kuruldu ?" />
+
+            <RadioButton Content="Galatasaray"
+                     CheckedChanged="TakimCheckedChanged" />
+            <RadioButton Content="Fenerbahçe"
+                     CheckedChanged="TakimCheckedChanged" />
+            <RadioButton Content="Beşiktaş"
+                     CheckedChanged="TakimCheckedChanged" />
+            <RadioButton Content="Trabzonspor"
+                    
+                     CheckedChanged="TakimCheckedChanged" />
+           
+        </StackLayout>
+        <Label x:Name="takimLabel"/>
+
+        <Button Text="Sonuçlara Git"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{x:Type local:sonuc}" />
+
+
+
+    </StackLayout>
+</ContentPage>

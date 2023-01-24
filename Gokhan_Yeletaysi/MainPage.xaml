@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:local="clr-namespace:Gokhan_Yeletaysi"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Gokhan_Yeletaysi.MainPage"
+             Title="RadioButton Demos">
+    
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="ANKET"
+                          Detail="Sorular"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:BasicRadioButtonsPage}" />
+               
+                <TextCell Text="Anket Sonuç"
+                          Command="{Binding NavigateCommand}"
+                          CommandParameter="{x:Type local:sonuc}" />
+            </TableSection>
+        </TableRoot>
+    </TableView>
+</ContentPage>
+
+
+            
